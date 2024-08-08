@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap');
+:root {
+
+    --primary: #1E1E24;
+    --secondary: #E54B4B;
+    --accent: #FFA987;
+    --casual: #F7EBE8;
+    
+    
+}
+
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--primary);
+    color: var(--casual);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+main{
+    flex:1;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.font-title{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font-content{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: 'normal'
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--casual);
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: var(--secondary);
+   
+}
+
+button{
+    padding: 10px ;
+    color: var(--casual);
+    background-color: var(--secondary);
+    border: none;
+}
