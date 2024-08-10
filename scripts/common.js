@@ -8,6 +8,8 @@ function loadHeader() {
         .catch(error => console.error('Error loading header:', error));
 }
 
+
+
 function loadFooter() {
     fetch('../components/footer.html')
         .then(response => response.text())
@@ -16,6 +18,8 @@ function loadFooter() {
         })
         .catch(error => console.error('Error loading header:', error));
 }
+
+
 
 
 
