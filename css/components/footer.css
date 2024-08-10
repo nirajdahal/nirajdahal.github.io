@@ -1,15 +1,15 @@
-.main-footer{
+.main-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    
+
 }
 
-.logo{
+.logo {
     font-size: 20px;
-    padding: 15px ;
+    padding: 15px;
 }
 
 .navigation ul {
@@ -17,7 +17,7 @@
     flex-direction: column;
 }
 
-.navigation ul li{
+.navigation ul li {
     padding: 10px;
 }
 
@@ -27,16 +27,17 @@
 
 /*  Medium Devices (Tablets and Small Laptops) */
 @media (min-width: 600px) {
+
     /* Styles for tablets and small laptops */
-    .main-header{
+    .main-header {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 15px;
     }
-    .navigation ul {
-    display: flex;
-    flex-direction: row;
-}
-}
 
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
