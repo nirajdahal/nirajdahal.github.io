@@ -1,9 +1,43 @@
+Dark mode icons change based on the mode
+
+/* Light mode: show sun icon */
+/* Base style for theme icons */
+.theme-icon.sun {
+    display: none;
+}
+
+.theme-icon.moon {
+    display: none;
+}
+
+body.light-mode .theme-icon.sun {
+    display: inline;
+}
+
+body.light-mode .theme-icon.moon {
+    display: none;
+}
+
+body.dark-mode .theme-icon.sun {
+    display: none;
+}
+
+body.dark-mode .theme-icon.moon {
+    display: inline;
+}
+
+
+.switch-mode-button {
+    background: transparent;
+}
+
 .main-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
+    text-align: center;
 
 }
 
@@ -12,10 +46,7 @@
     padding: 15px;
 }
 
-.navigation ul {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .navigation ul li {
     padding: 10px;
@@ -26,8 +57,74 @@
 }
 
 
+
+/* Show the hamburger icon on small screens */
+.hamburger {
+    display: block;
+}
+
+
+/* Add this to style the hamburger icon */
+.hamburger {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add this to rotate the hamburger icon on click */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -5px);
+}
+
+.nav-links.show {
+    display: block;
+    padding: 10px;
+
+
+}
+
+/* Add this to style the navigation links on small screens */
+@media (max-width: 767px) {
+    .nav-links.show {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hide the navigation links on small screens */
+    .nav-links {
+        display: none;
+    }
+}
+
+
 /*  Medium Devices (Tablets and Small Laptops) */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Hide the hamburger icon on medium screens and above */
+    .hamburger {
+        display: none;
+    }
 
     .main-header {
         flex-direction: row;
@@ -36,8 +133,6 @@
         padding: 15px;
     }
 
-    .navigation ul {
-        display: flex;
-        flex-direction: row;
-    }
+
+
 }

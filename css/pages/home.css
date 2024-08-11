@@ -8,14 +8,6 @@
     /* border: 1px solid white; */
     align-items: center;
 
-    background:
-        linear-gradient(0deg,
-            rgba(30, 30, 36, 0.95),
-            rgba(30, 30, 36, 0.95)),
-        url('../../assets/images/heroBackground.png');
-    background-size: calc(300px);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 
@@ -27,7 +19,7 @@
 }
 
 .hero-content {
-    opacity: 0.6;
+    opacity: var(--opacity-text);
 }
 
 .header-content {
@@ -65,6 +57,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary-opacity);
+    margin-top: 80px;
 
 }
 
@@ -83,7 +76,7 @@
 
 .left-layout p {
     padding: 0 30px;
-    opacity: 0.6;
+    opacity: var(--opacity-text);
 }
 
 .right-layout {
@@ -145,13 +138,15 @@
 /* Image Gallery Css */
 
 #light-gallery {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     padding: 10px 60px;
 }
 
 .image-gallery img {
-    opacity: 0.5;
+    opacity: var(--opacity-image);
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -172,6 +167,21 @@
 /*  Medium Devices (Tablets and Small Laptops) */
 @media (min-width: 600px) {
 
+    @keyframes floatBackground {
+
+        0%,
+        100% {
+            background-position: left bottom;
+            /* Initial position */
+        }
+
+        50% {
+            background-position: left calc(100% + 20px);
+            /* Moves the background up */
+        }
+    }
+
+
     /* Hero Section Responsiveness */
     .hero-section {
         margin: 20px 0;
@@ -185,14 +195,19 @@
 
         background:
             linear-gradient(0deg,
-                rgba(30, 30, 36, 0.95),
-                rgba(30, 30, 36, 0.95)),
+                var(--background-opacity),
+                var(--background-opacity)),
             url('../../assets/images/heroBackground.png');
         background-size: contain;
         background-position: left;
         background-repeat: no-repeat;
+        animation: floatBackground 3s ease-in-out infinite;
 
     }
+
+    /* Animation to make the background image float up and down */
+
+
 
     .hero-title {
         margin: 20px;
@@ -225,15 +240,11 @@
 @media (min-width:1025px) {
 
     #light-gallery {
-
         padding: 10px 100px;
     }
 }
 
 @media (min-width:1920px) {
 
-    #light-gallery {
-
-        padding: 10px 300px;
-    }
+    #light-gallery {}
 }
