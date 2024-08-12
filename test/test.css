@@ -1,0 +1,37 @@
+.mission-vision-container .container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* padding: 50px; */
+}
+
+.mission-vision-container h4 {
+    padding: 10px;
+}
+
+.mission-vision-container .picture-right {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.mission-vision-container .description-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+
+.mission-vision-container img {
+    max-width: 80%;
+    height: auto;
+    margin: 50px;
+}

@@ -1,0 +1,144 @@
+.video-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.video-banner .banner-heading {
+
+    text-align: center;
+    margin: 20px;
+}
+
+
+.video-banner .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.video-banner video {
+    margin-top: 50px;
+    width: 380px;
+}
+
+
+.video-banner .join {
+    background: none;
+}
+
+.video-banner .join:hover {
+    background-color: var(--secondary)
+}
+
+.mission-vision-container {
+    background-color: var(--primary-opacity);
+}
+
+.mission-vision-container * {
+    background-color: var(--primary-opacity);
+}
+
+.mission-vision-container .container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* padding: 50px; */
+}
+
+.mission-vision-container h4 {
+    padding: 10px;
+}
+
+.mission-vision-container .picture-right {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.mission-vision-container .description-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+
+.mission-vision-container img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+@media (min-width: 599px) and (max-width: 649px) {
+    .video-banner video {
+        width: 500px;
+    }
+
+}
+
+@media screen {}
+
+@media (min-width: 650px) and (max-width: 999px) {
+    .video-banner video {
+        width: 600px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .mission-vision-container .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+
+
+    .mission-vision-container .description-left {
+
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 50px;
+
+    }
+
+    .vision-description {
+        order: 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-banner video {
+        width: 800px;
+    }
+
+
+
+    .mission-vision-container .container {
+        max-width: 1200px;
+        padding: 50px 50px;
+
+
+    }
+
+
+
+}

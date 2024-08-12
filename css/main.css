@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap');
 
+
+/* variable for root theme */
 :root {
 
     --primary: #1E1E24;
-
-
     --primary-opacity: #1c1c22;
-
     --secondary: #E54B4B;
     --accent: #FFA987;
     --casual: #F7EBE8;
     --background-opacity: #1e1e24f2;
     --opacity-text: 0.6;
-    --opacity-image: 0.5;
+    --opacity-image: 0.7;
 }
 
+/* variables for light theme */
 .light-mode {
     --primary: #FEFAE0;
     /* Light background color */
@@ -65,7 +65,7 @@
 }
 
 
-
+/* Global style for elements */
 body {
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
@@ -97,6 +97,8 @@ ul li {
 }
 
 a {
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     color: var(--casual);
     transition: 0.5s;
@@ -104,19 +106,58 @@ a {
 
 a:hover {
     background-color: var(--secondary);
-
 }
 
 button {
+    margin: 10px;
     padding: 10px;
     color: var(--casual);
     background-color: var(--secondary);
     border: none;
+    font-size: 14px;
 }
+
 
 button:hover {
     cursor: pointer;
 }
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+
+.decorated-text {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--accent);
+}
+
+
+
 
 /* Common card with image layout styling */
 
@@ -140,7 +181,7 @@ button:hover {
 }
 
 .card-info-heading {
-    font-size: 16px;
+
     padding: 10px;
 }
 
@@ -180,7 +221,7 @@ button:hover {
 
 }
 
-.get-connected h3,
+.get-connected h4,
 p {
     margin: 10px;
 }
@@ -200,6 +241,21 @@ textarea {
     display: none;
 }
 
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem
+}
+
+
+
+@media(min-width: 1600px) {
+    .container {
+        max-width: 1920px;
+    }
+}
 
 @media (min-width: 1200px) {
     /* Get connected form */

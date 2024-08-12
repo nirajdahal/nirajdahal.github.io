@@ -27,9 +27,6 @@ body.dark-mode .theme-icon.moon {
 }
 
 
-.switch-mode-button {
-    background: transparent;
-}
 
 .main-header {
     display: flex;
@@ -42,20 +39,37 @@ body.dark-mode .theme-icon.moon {
 }
 
 .logo {
-    font-size: 20px;
     padding: 15px;
+
+}
+
+.logo a {
+    margin: 0;
+    padding: 0;
+}
+
+.logo a:hover {
+    cursor: pointer;
+    background: none;
+
 }
 
 
 
 .navigation ul li {
     padding: 10px;
+    margin: 15px;
 }
 
 .navigation ul li a {
     padding: 10px;
+    margin: 0;
+
 }
 
+.switch-mode-button {
+    background: transparent;
+}
 
 
 /* Show the hamburger icon on small screens */
@@ -101,7 +115,7 @@ body.dark-mode .theme-icon.moon {
 }
 
 /* Add this to style the navigation links on small screens */
-@media (max-width: 767px) {
+@media (max-width: 999px) {
     .nav-links.show {
         width: 100%;
         text-align: center;
@@ -115,7 +129,7 @@ body.dark-mode .theme-icon.moon {
 
 
 /*  Medium Devices (Tablets and Small Laptops) */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .navigation ul {
         display: flex;
         flex-direction: row;
