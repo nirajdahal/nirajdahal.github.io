@@ -81,6 +81,9 @@
     margin-right: auto;
     display: block;
 
+    /* border: 2px solid #fff; */
+    border-radius: 71% 30% 32% 70% / 60% 40% 60% 55%;
+    opacity: var(--opacity-image);
 }
 
 @media (min-width: 599px) and (max-width: 649px) {
