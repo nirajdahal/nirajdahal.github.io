@@ -73,3 +73,9 @@ function toggleMenu() {
         navLinks.style.display = ''; // Set display to an empty string to allow CSS to take over
     }
 }
+
+
+
+
+
+

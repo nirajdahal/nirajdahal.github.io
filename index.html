@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- All css links -->
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/pages/home.css" />
 
+    <!-- External CSS -->
     <link href="
     https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.min.css
     " rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pages.css" />
+
+
 
 
     <title>Home</title>
@@ -24,10 +29,7 @@
     <!-- Page content -->
     <main>
 
-        <!-- <div id="scene">
-            <div data-depth="0.2">My first Layer!</div>
-            <div data-depth="0.6">My second Layer!</div>
-        </div> -->
+
 
         <header class="hero-section container">
 
@@ -46,8 +48,60 @@
         </header>
 
 
+        <!-- Newletter  -->
 
-        <section class="container working-areas">
+        <section class="newsletter">
+            <header class="subscript-text">
+                <h5 class="font-title">Subscribe to our newsletter</h5>
+            </header>
+            <form class="subscript-input font-content">
+                <input class="subscribe-input" placeholder="Your Email" type="email">
+                <button class="subscribe-button" type="button">Submit</button>
+            </form>
+
+        </section>
+
+        <!-- What we do -->
+        <section class="container ">
+            <div class="about-us">
+                <div class="about-left">
+                    <h4 class="font-title">Together, We Find A <span class="decorated-text">Way</span></h4>
+                    <p class="font-content">Hope For Tomorrow Offers Sustainable Solutions To Support Nature and
+                        Animals, Creating a Better Future</p>
+                </div>
+                <div class="about-right">
+                    <div class="right-divs">
+                        <div>
+                            <h5 class="font-title">Who we are</h5>
+                            <p class="font-content">Dedicated to Preserving Nature and Animal Habitats with Lasting
+                                Conservation Impact</p>
+                        </div>
+                        <div>
+                            <h5 class="font-title">Who we do</h5>
+                            <p class="font-content">Driving Positive Change for Nature and Animals through Innovative
+                                Conservation Efforts</p>
+                        </div>
+                    </div>
+                    <div class="right-divs">
+                        <div>
+                            <h5 class="font-title">Where we work</h5>
+                            <p class="font-content">Protecting Diverse Nature and Animal Environments with Effective
+                                Conservation Strategies</p>
+                        </div>
+                        <div>
+                            <h5 class="font-title">How to help</h5>
+                            <p class="font-content">Join Us in Protecting Nature and Animals: Volunteer, Reduce, Donate,
+                                and Make a Difference</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Working Areas -->
+        <section class="working-areas">
 
             <div class="left-layout">
                 <h3 class="font-title"> Working <span class="decorated-text">Areas</span></h3>
@@ -70,6 +124,7 @@
 
         </section>
 
+        <!-- Look into Projects -->
         <section class="projects container">
             <div class="project-heading font-title">
                 <h3>Look At Our <span class="decorated-text">Projects</span></h3>
@@ -77,21 +132,21 @@
             <div class="cards">
                 <div class="card-with-image">
                     <figure class="card-image">
-                        <img src="./assets/images/tree-plantation.jpg" alt="Trees plantation" />
+                        <img src="./assets/images/projects/tree-plantation.jpg" alt="Trees plantation" />
 
                     </figure>
 
                     <div class="card-info">
-                        <h5 class="card-info-heading font-title">Forest Restoration and Rehabilitation</h5>
+                        <h5 class="card-info-heading font-title">Forest Restoration</h5>
                         <p class="card-info-description font-content">Reforestation revitalizes ecosystems, combats
-                            climate change, and supports biodiversity.
+                            climate change, & biodiversity.
                         </p>
                         <button class="card-info-button">View</button>
                     </div>
                 </div>
                 <div class="card-with-image">
                     <figure class="card-image">
-                        <img src="./assets/images/cleanplastic.webp" alt="Cleaning Plastic" />
+                        <img src="./assets/images/projects/cleanplastic.webp" alt="Cleaning Plastic" />
 
                     </figure>
 
@@ -105,7 +160,7 @@
                 </div>
                 <div class="card-with-image">
                     <figure class="card-image">
-                        <img src="./assets/images/savedogs.jpg" alt="Dog picture with man" />
+                        <img src="./assets/images/projects/savedogs.jpg" alt="Dog picture with man" />
 
                     </figure>
 
@@ -121,6 +176,7 @@
 
         </section>
 
+        <!-- Gallery -->
 
         <section class="gallery container">
             <div class="gallery-heading font-title">
@@ -131,37 +187,39 @@
 
                 <!-- Gallery container -->
                 <div id="light-gallery">
-
-
-
-                    <a href="./assets/images/ocean clean.jpg" data-sub-html="<h4>Cleaning Ocean</h4>">
-                        <img src="./assets/images/ocean clean.jpg" alt="Cleaning Ocean" />
+                    <a href="./assets/images/projects/ocean clean.jpg" data-sub-html="<h4>Cleaning Ocean</h4>">
+                        <img src="./assets/images/projects/ocean clean.jpg" alt="Cleaning Ocean" />
                     </a>
 
-                    <a href="./assets/images/treeplant.jpg" data-sub-html="<h4>Planting Trees</h4>">
-                        <img src="./assets/images/treeplant.jpg" alt="Planting Trees" />
+
+
+                    <a href="./assets/images/projects/treeplant.jpg" data-sub-html="<h4>Planting Trees</h4>">
+                        <img src="./assets/images/projects/treeplant.jpg" alt="Planting Trees" />
                     </a>
 
-                    <a href="./assets/images/saveanimal.jpg" data-sub-html="<h4>Rescue Mission</h4>">
-                        <img src="./assets/images/saveanimal.jpg" alt="Rescue Mission" />
+                    <a href="./assets/images/projects/saveanimal.jpg" data-sub-html="<h4>Rescue Mission</h4>">
+                        <img src="./assets/images/projects/saveanimal.jpg" alt="Rescue Mission" />
                     </a>
 
-                    <a href="./assets/images/treeplantation.jpg" data-sub-html="<h4>Tree Plantation</h4>">
-                        <img src="./assets/images/treeplantation.jpg" alt="Tree Plantation" />
+                    <a href="./assets/images/projects/treeplantation.jpg" data-sub-html="<h4>Tree Plantation</h4>">
+                        <img src="./assets/images/projects/treeplantation.jpg" alt="Tree Plantation" />
                     </a>
-                    <a href="./assets/images/wildliferescue.jpeg" data-sub-html="<h4>Cleaning Ocean</h4>">
-                        <img src="./assets/images/wildliferescue.jpeg" alt="Cleaning Ocean" />
-                    </a>
-
-                    <a href="./assets/images/cleanforest.jpg" data-sub-html="<h4>Cleaning Forest</h4>">
-                        <img src="./assets/images/cleanforest.jpg" alt="Cleaning Forest" />
-                    </a>
-                    <a href="./assets/images/tresswatering.jpg" data-sub-html="<h4>Watering Plant</h4>">
-                        <img src="./assets/images/tresswatering.jpg" alt="Watering Plant" />
+                    <a href="./assets/images/projects/wildliferescue.jpeg" data-sub-html="<h4>Cleaning Ocean</h4>">
+                        <img src="./assets/images/projects/wildliferescue.jpeg" alt="Cleaning Ocean" />
                     </a>
 
-                    <a href="./assets/images/saveanimals.jpg" data-sub-html="<h4>Rescue Animal</h4>">
-                        <img src="./assets/images/saveanimals.jpg" alt="Rescue Animal" />
+                    <a href="./assets/images/projects/cleanforest.jpg" data-sub-html="<h4>Cleaning Forest</h4>">
+                        <img src="./assets/images/projects/cleanforest.jpg" alt="Cleaning Forest" />
+                    </a>
+                    <a href="./assets/images/projects/tresswatering.jpg" data-sub-html="<h4>Watering Plant</h4>">
+                        <img src="./assets/images/projects/tresswatering.jpg" alt="Watering Plant" />
+                    </a>
+
+                    <a href="./assets/images/projects/saveanimals.jpg" data-sub-html="<h4>Rescue Animal</h4>">
+                        <img src="./assets/images/projects/saveanimals.jpg" alt="Rescue Animal" />
+                    </a>
+                    <a href="./assets/images/projects/saveanimals.jpg" data-sub-html="<h4>Rescue Animal</h4>">
+                        <img src="./assets/images/projects/tree-plantation.jpg" alt="Rescue Animal" />
                     </a>
 
                 </div>
@@ -171,33 +229,40 @@
         </section>
 
 
-        <section class="get-connected">
-            <form class="get-connected-form">
-                <div class="form-description">
-                    <h4 class="font-title">Stay Connected</h4>
-                    <p class="font-content">Join s and give your Help in the efforts to protect our green forest
-                    <p class="font-content">today so the earth may
-                        keep
-                        breathing.</p>
-                    </p>
-                </div>
+        <!-- Get connected -->
+        <section class="get-connected container">
 
-                <div class="input-email">
-                    <input placeholder="Your Email">
-                </div>
-                <div class="input-message">
-                    <textarea placeholder="Your Message" rows="8"></textarea>
-                </div>
-                <div class="submit-button">
-                    <button>Submit</button>
-                </div>
+            <div class="get-connected-container ">
+                <form class="get-connected-form">
+                    <div class="form-description">
+                        <h4 class="font-title">Stay Connected</h4>
+                        <p class="font-content">Join s and give your Help in the efforts to protect our green forest
+                            today!
 
-            </form>
+                    </div>
+                    <div class="input-name">
+                        <input placeholder="Name">
+                    </div>
+                    <div class="input-email">
+                        <input placeholder="Your Email">
+                        <span class="email-error font-content"></span>
+                    </div>
 
-            <div class="right-image">
+                    <div class="input-message">
+                        <textarea placeholder="Your Message" rows="8"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <button>Submit</button>
+                    </div>
 
-                <img src="./assets/images/floating-plant.png" alt="Floating Plant Inside Bulb" />
+                </form>
+
+                <div class="right-image">
+
+                    <img src="./assets/images/floating-plant.png" alt="Floating Plant Inside Bulb" />
+                </div>
             </div>
+
         </section>
 
 
@@ -212,17 +277,11 @@
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script src="./scripts/home.js"></script>
     <script src="./scripts/common.js"></script>
-
-
-
-
-
-
-
-
+    <script src="./scripts/contact.js"></script>
 </body>
 
 </html>
