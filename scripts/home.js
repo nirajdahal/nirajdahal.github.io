@@ -1,4 +1,4 @@
-lightGallery(document.getElementById('lightgallery'), {
+lightGallery(document.getElementById('light-gallery'), {
     selector: 'a',
     thumbnail: true,
     zoom: true,

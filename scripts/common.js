@@ -53,6 +53,7 @@ loadFooter();
 // Call applyTheme when the document is ready
 document.addEventListener('DOMContentLoaded', themeManager.applyTheme);
 
+
 // Add this JavaScript code to toggle the navigation links on click
 
 // Add this JavaScript code to toggle the navigation links on click

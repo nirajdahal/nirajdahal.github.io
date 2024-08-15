@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap');
 
+/* 
+--------------------------------------------------------
+Part 1 Starts: This part of the css is for root styles
+--------------------------------------------------------
+*/
 
 /* variable for root theme */
 :root {
@@ -21,20 +26,13 @@
 /* variables for light theme */
 .light-mode {
     --primary: #FEFAE0;
-    /* Light background color */
     --primary-opacity: #FAEDCE;
-    /* Light background color with opacity */
     --secondary: #E68369;
-    /* Secondary color */
     --accent: #131842;
-    /* Accent color */
     --casual: #131842;
     --opacity-text: 1;
     --opacity-image: 0.8;
-
     --background-opacity: #faedceb8;
-    /* Casual color */
-
     --font-paragraph: "Manrope", sans-serif;
 }
 
@@ -69,6 +67,19 @@
     background: var(--accent);
 }
 
+
+/* 
+--------------------------------------------------------
+Part 1 Ends
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+Part 2 Start: Global Element Styles
+--------------------------------------------------------
+*/
 
 /* Global style for elements */
 body {
@@ -166,6 +177,20 @@ span {
     padding: 0;
 }
 
+/* 
+--------------------------------------------------------
+Part 2 Ends
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+Part 3 Starts: Global Styles for Card, Text, Forms
+--------------------------------------------------------
+*/
+
+
 .decorated-text {
     color: var(--secondary);
     text-decoration: underline;
@@ -258,7 +283,6 @@ span {
     margin: 10px 0;
 }
 
-/* Get Connected Form */
 .get-connected-container * {
     background-color: var(--primary-opacity);
 }
@@ -277,6 +301,7 @@ span {
 }
 
 /* What we do sections */
+
 .about-us {
     display: flex;
     flex-direction: column;
@@ -380,79 +405,21 @@ span {
     margin-bottom: 10px;
 }
 
-
-@media (min-width: 769px) {
-
-    .about-us .about-left {
-        text-align: center;
-        padding: 20px;
-    }
+/* 
+--------------------------------------------------------
+Part 3 Ends
+--------------------------------------------------------
+*/
 
 
 
-    .about-right {
-        display: flex;
-        justify-content: space-around;
-        gap: 50px;
 
-    }
+/* 
+--------------------------------------------------------
+Part 4 Starts: Header and Navbar Styles
+--------------------------------------------------------
+*/
 
-}
-
-
-
-@media (min-width: 1200px) {
-    /* Get connected form */
-
-    .get-connected-container {
-
-        display: flex;
-        justify-content: center;
-        padding: 30px 40px;
-        margin: 20px;
-
-    }
-
-    .get-connected-container * {
-        background-color: var(--primary-opacity);
-        padding: 10px;
-    }
-
-
-    .right-image {
-        display: flex;
-
-        padding: 10px;
-
-    }
-
-    .get-connected-container input,
-    .get-connected-container textarea {
-        width: 100%;
-    }
-
-    .right-image img {
-        margin-top: 100px;
-        height: 300px;
-        animation: floatUpDown 3s ease-in-out infinite;
-        opacity: var(--opacity-image);
-    }
-
-
-
-    @keyframes floatUpDown {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-20px);
-        }
-    }
-
-}
 
 /* Header CSS Styles */
 
@@ -542,39 +509,21 @@ span {
 
 }
 
-/* Add this to style the navigation links on small screens */
-@media (max-width: 999px) {
-    .nav-links.show {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Hide the navigation links on small screens */
-    .nav-links {
-        display: none;
-    }
-}
 
 
-/*  Medium Devices (Tablets and Small Laptops) */
-@media (min-width: 1000px) {
-    .navigation ul {
-        display: flex;
-        flex-direction: row;
-    }
+/* 
+--------------------------------------------------------
+Part 4 Ends
+--------------------------------------------------------
+*/
 
-    /* Hide the hamburger icon on medium screens and above */
-    .hamburger {
-        display: none;
-    }
 
-    .main-header {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-}
+/* 
+--------------------------------------------------------
+Part 5 Starts: Footer Navigation Styles
+--------------------------------------------------------
+*/
+
 
 footer {
     background-color: var(--primary-opacity);
@@ -606,7 +555,21 @@ footer .navigation ul li a {
     padding: 10px;
 }
 
-/*  Medium Devices (Tablets and Small Laptops) */
+
+/* 
+--------------------------------------------------------
+Part 5 Ends
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+Part 6: Media Queries
+--------------------------------------------------------
+*/
+
+
 @media (min-width: 600px) {
 
     /* Styles for tablets and small laptops */
@@ -621,4 +584,105 @@ footer .navigation ul li a {
         display: flex;
         flex-direction: row;
     }
+}
+
+
+@media (min-width: 769px) {
+
+    .about-us .about-left {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    .about-right {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+
+    }
+
+}
+
+@media (max-width: 999px) {
+    .nav-links.show {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hide the navigation links on small screens */
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Hide the hamburger icon on medium screens and above */
+    .hamburger {
+        display: none;
+    }
+
+    .main-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Get connected form */
+    .get-connected-container {
+        display: flex;
+        justify-content: center;
+        padding: 30px 40px;
+        margin: 20px;
+
+    }
+
+    .get-connected-container * {
+        background-color: var(--primary-opacity);
+        padding: 10px;
+    }
+
+    .right-image {
+        display: flex;
+
+        padding: 10px;
+
+    }
+
+    .get-connected-container input,
+    .get-connected-container textarea {
+        width: 100%;
+    }
+
+    .right-image img {
+        margin-top: 100px;
+        height: 300px;
+        animation: floatUpDown 3s ease-in-out infinite;
+        opacity: var(--opacity-image);
+    }
+
+
+
+    @keyframes floatUpDown {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
 }

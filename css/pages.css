@@ -1,7 +1,9 @@
-/* Dark mode icons change based on the mode */
-
-/* Light mode: show sun icon */
-/* Base style for theme icons */
+/* Light mode: show sun icon, Dark Mode Show Moon Icon */
+/* 
+--------------------------------------------------------
+Part 1 Dark Mode & Light Mode For Icons
+--------------------------------------------------------
+*/
 .theme-icon.sun {
     display: none;
 }
@@ -26,8 +28,19 @@ body.dark-mode .theme-icon.moon {
     display: inline;
 }
 
+/* 
+--------------------------------------------------------
+Part 1 Ends
+--------------------------------------------------------
+*/
 
 
+
+/* 
+--------------------------------------------------------
+Part 2 Starts: Home Page CSS
+--------------------------------------------------------
+*/
 
 /* Hero Section */
 
@@ -65,13 +78,11 @@ body.dark-mode .theme-icon.moon {
     background-color: transparent;
 }
 
-.hero-buttons {
+.hero-buttons button a {
     padding: 10px;
-    background-color: transparent;
+    background-color: var(--secondary);
 
 }
-
-
 
 
 /* Working Areas Section */
@@ -127,9 +138,6 @@ body.dark-mode .theme-icon.moon {
 
 }
 
-
-
-/* CSS Code For Home Page */
 /* Image Gallery Css */
 
 #light-gallery {
@@ -165,74 +173,19 @@ body.dark-mode .theme-icon.moon {
 }
 
 
-/*  Medium Devices (Tablets and Small Laptops) */
-@media (min-width: 600px) {
 
-    @keyframes floatBackground {
-
-        0%,
-        100% {
-            background-position: left bottom;
-            /* Initial position */
-        }
-
-        50% {
-            background-position: left calc(100% + 20px);
-            /* Moves the background up */
-        }
-    }
+/* 
+--------------------------------------------------------
+Part 2 Ends
+--------------------------------------------------------
+*/
 
 
-    /* Hero Section Responsiveness */
-    .hero-section {
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        height: 60vh;
-        /* border: 1px solid white; */
-        align-items: center;
-
-        background:
-            linear-gradient(0deg,
-                var(--background-opacity),
-                var(--background-opacity)),
-            url('../../assets/images/heroBackground.png');
-        background-size: contain;
-        background-position: left;
-        background-repeat: no-repeat;
-        animation: floatBackground 3s ease-in-out infinite;
-
-    }
-
-    /* Animation to make the background image float up and down */
-
-
-
-
-
-    /* Working area responsiveness */
-
-    .working-areas {
-        /* border: 1px solid white; */
-        display: flex;
-        flex-direction: row;
-        padding: 60px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .left-layout {
-        padding: 50px;
-
-    }
-
-
-
-}
-
+/* 
+--------------------------------------------------------
+Part 3 Starts: Donation Page
+--------------------------------------------------------
+*/
 
 /* CSS Code For Donation */
 .donation-container {
@@ -335,19 +288,23 @@ body.dark-mode .theme-icon.moon {
     color: var(--accent);
 }
 
-@media (min-width:600px) {
+
+/* 
+--------------------------------------------------------
+Part 3 Ends
+--------------------------------------------------------
+*/
 
 
-    .donation-stats {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-
-    }
-}
 
 
-/* CSS Code For Mission */
+
+/* 
+--------------------------------------------------------
+Part 3 Starts: Mission/About Page
+--------------------------------------------------------
+*/
+
 /* Video banner container */
 .video-banner {
     display: flex;
@@ -490,77 +447,12 @@ body.dark-mode .theme-icon.moon {
 }
 
 
+/* 
+--------------------------------------------------------
+Part 4 Starts: Contact US Page
+--------------------------------------------------------
+*/
 
-
-
-/* media screen adjustment for various devices and screens */
-@media (min-width: 599px) and (max-width: 649px) {
-    .video-banner video {
-        width: 500px;
-    }
-
-}
-
-@media (min-width: 650px) and (max-width: 999px) {
-    .video-banner video {
-        width: 600px;
-    }
-}
-
-
-
-@media (min-width: 800px) {
-
-    /* Mission Vision */
-    .mission-vision-container img {
-        width: 70%;
-
-    }
-
-    .mission-vision-container .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .mission-vision-container .description-left {
-
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        /* padding: 50px; */
-
-    }
-
-    .vision-description {
-        order: 2;
-    }
-}
-
-
-
-@media (min-width: 1000px) {
-
-    /* Video Banner */
-    .video-banner video {
-        min-width: 1000px;
-
-    }
-
-}
-
-@media (min-width: 1300px) {
-    .mission-vision-container .container {
-        padding: 10px 120px;
-    }
-}
-
-
-
-/* CSS Code For Contact US */
 .email-error {
     display: none;
     color: var(--secondary);
@@ -573,8 +465,17 @@ address {
     font-style: normal;
 }
 
+/* 
+--------------------------------------------------------
+Part 4 Ends
+--------------------------------------------------------
+*/
 
-/* Project Page css */
+/* 
+--------------------------------------------------------
+Part 5 Starts: Program/Project Page
+--------------------------------------------------------
+*/
 
 
 .project-banner {
@@ -613,6 +514,19 @@ address {
 
 }
 
+
+/* 
+--------------------------------------------------------
+Part 5 Ends
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+Part 6 Starts: Blog Page
+--------------------------------------------------------
+*/
 /* Blog CSS */
 
 
@@ -693,7 +607,135 @@ address {
     margin: 0;
 }
 
-@media (min-width:800px) {
+
+/* 
+--------------------------------------------------------
+Part 6 Ends
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+Part 7 Starts: Media Queries
+--------------------------------------------------------
+*/
+
+
+@media (min-width: 599px) and (max-width: 649px) {
+    .video-banner video {
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    @keyframes floatBackground {
+
+        0%,
+        100% {
+            background-position: left bottom;
+            /* Initial position */
+        }
+
+        50% {
+            background-position: left calc(100% + 20px);
+            /* Moves the background up */
+        }
+    }
+
+
+    /* Hero Section Responsiveness */
+    .hero-section {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 60vh;
+        /* border: 1px solid white; */
+        align-items: center;
+
+        background:
+            linear-gradient(0deg,
+                var(--background-opacity),
+                var(--background-opacity)),
+            url('../../assets/images/heroBackground.png');
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        animation: floatBackground 3s ease-in-out infinite;
+
+    }
+
+    /* Working area responsiveness */
+
+    .working-areas {
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: row;
+        padding: 60px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left-layout {
+        padding: 50px;
+
+    }
+
+    .donation-stats {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+
+
+
+}
+
+@media (min-width: 650px) and (max-width: 999px) {
+    .video-banner video {
+        width: 600px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /* Mission Vision Page*/
+    .mission-vision-container img {
+        width: 70%;
+
+    }
+
+    .mission-vision-container .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .mission-vision-container .description-left {
+
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        /* padding: 50px; */
+
+    }
+
+    .vision-description {
+        order: 2;
+    }
+
+
+    /* Blog Page */
+
     .blog-search {
         flex-direction: row;
     }
@@ -704,5 +746,22 @@ address {
 
     .blog-search .right-section * {
         display: block;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    /* Video Banner */
+    .video-banner video {
+        min-width: 1000px;
+
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .mission-vision-container .container {
+        padding: 10px 120px;
     }
 }
