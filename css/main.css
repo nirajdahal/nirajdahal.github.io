@@ -576,15 +576,16 @@ span {
     }
 }
 
+footer {
+    background-color: var(--primary-opacity);
+}
 
-/* Footer Styles */
-.main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+footer * {
+    background-color: var(--primary-opacity);
+}
 
+footer button {
+    background-color: var(--secondary);
 }
 
 footer .logo {
