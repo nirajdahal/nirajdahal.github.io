@@ -25,3 +25,9 @@ function ToastFunc(message, success) {
         }
     }).showToast();
 }
+
+
+document.getElementById('scroll-donation').addEventListener('click', function () {
+    const bottomContent = document.getElementById('main-donation');
+    bottomContent.scrollIntoView({ behavior: 'smooth' });
+});

@@ -84,6 +84,24 @@ Part 2 Starts: Home Page CSS
 
 }
 
+.card-info button a {
+    padding: 10px;
+    background-color: var(--secondary);
+
+}
+
+.hero-buttons button a:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.card-info button a:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
 
 /* Working Areas Section */
 .working-areas {
@@ -156,8 +174,8 @@ Part 2 Starts: Home Page CSS
 
 .image-gallery img {
     opacity: var(--opacity-image);
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -191,7 +209,7 @@ Part 3 Starts: Donation Page
 .donation-container {
 
     max-width: 600px;
-    margin: 50px auto;
+    margin: 100px auto;
     background-color: var(--primary-opacity);
 }
 
@@ -311,14 +329,14 @@ Part 3 Starts: Mission/About Page
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding-bottom: 50px;
 }
 
 .video-banner .banner-heading {
-
     text-align: center;
     margin: 20px;
 }
+
 
 
 .video-banner .buttons {
@@ -329,7 +347,7 @@ Part 3 Starts: Mission/About Page
 
 .video-banner video {
     margin-top: 50px;
-    width: 380px;
+    width: 100%;
 }
 
 
@@ -479,8 +497,12 @@ Part 5 Starts: Program/Project Page
 
 
 .project-banner {
-    background-image: none;
-    background-color: var(--primary-opacity);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 
 /* Newletter CSS */
@@ -537,6 +559,7 @@ Part 6 Starts: Blog Page
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
+    padding-top: 100px;
     /* flex-wrap: wrap; */
 
 }
@@ -748,14 +771,24 @@ Part 7 Starts: Media Queries
         display: block;
     }
 
+
 }
 
 @media (min-width: 1000px) {
+    .image-gallery img {
+
+        width: 400px;
+
+    }
 
     /* Video Banner */
     .video-banner video {
-        min-width: 1000px;
+        width: 900px;
 
+    }
+
+    .video-banner .video {
+        margin-top: 100px;
     }
 
 }
@@ -763,5 +796,23 @@ Part 7 Starts: Media Queries
 @media (min-width: 1300px) {
     .mission-vision-container .container {
         padding: 10px 120px;
+    }
+
+    /* Video Banner */
+    .video-banner video {
+        width: 900px;
+
+    }
+}
+
+@media (min-width: 2400px) {
+    .mission-vision-container .container {
+        padding: 10px 120px;
+    }
+
+    .project-banner {
+
+
+        height: 30vh;
     }
 }
