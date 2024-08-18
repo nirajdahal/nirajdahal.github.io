@@ -8,6 +8,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- All Internal links -->
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../css/pages.css" />
@@ -22,7 +23,7 @@
     <main>
 
         <!-- Contact Info -->
-        <section class="container ">
+        <section data-aos="zoom-in" data-aos-duration="3000" class="container ">
             <article class="about-us">
                 <aside class="about-left">
                     <h4 class="font-title">Get in Touch with <span class="decorated-text">Us</span></h4>
@@ -97,9 +98,14 @@
     <!-- Footer Will be Loaded From JS -->
     <footer id="footer">
         <!-- All js links -->
-
-        <script src="../scripts/common.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="../scripts/common.js"></script>
+
+
         <script src="../scripts/contact.js"></script>
 </body>
 

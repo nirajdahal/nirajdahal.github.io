@@ -8,7 +8,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Internal Css -->
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
 
@@ -29,7 +29,8 @@
         <header class="project-banner container">
 
             <div class="header-content">
-                <h4 class="font-title hero-title">"Support Us On Our <span class="decorated-text">Mission
+                <h4 data-aos="zoom-in" data-aos-duration="3000" class="font-title hero-title">"Support Us On Our <span
+                        class="decorated-text">Mission
                     </span>"</h4>
                 <div class="hero-content">
                     <p class="font-content "></p>
@@ -46,7 +47,7 @@
                 <h4>Contributed <span class="decorated-text">Donations</span></h4>
             </div>
             <div class="cards">
-                <div class="card-with-image">
+                <div data-aos="zoom-in-right" data-aos-duration="2000" class="card-with-image">
                     <figure class="card-image">
                         <img src="../assets/images/donations/environment.jpg" alt="Clean Environment" />
                     </figure>
@@ -65,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-with-image">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="card-with-image">
                     <figure class="card-image">
                         <img src="../assets/images/donations/save animals.jpg" alt="Protecting Animals" />
                     </figure>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-with-image">
+                <div data-aos="zoom-in-left" data-aos-duration="2000" class="card-with-image">
                     <figure class="card-image">
                         <img src="../assets/images/donations/donation.jpg" alt="Volunteers" />
                     </figure>
@@ -106,7 +107,7 @@
             </div>
         </section>
         <!-- Donation Amount -->
-        <section id="main-donation" class="donation-container">
+        <section data-aos="zoom-in" data-aos-duration="2000" id="main-donation" class="donation-container">
             <div class="donation">
                 <div class="donation-theme">
                     <p class="font-content">Together, let's embark on a journey to safeguard this natural wonder and
@@ -234,6 +235,11 @@
     <!-- All js links -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script src="../scripts/common.js"></script>
 
     <script src="../scripts/donation.js"></script>
